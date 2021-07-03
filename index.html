@@ -1,55 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Book Address</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="search_bar">
-            <input type="search" name="search" placeholder="Search">
-            <img src="./images/search.svg" alt="serach icon"/>
-        </div>
-        <button class="add_contact">Add Contact</button>
+      <div class="search_bar">
+        <input type="search" name="search" placeholder="Search" />
+        <img src="./images/search.svg" alt="serach icon" />
+      </div>
+      <button class="add_contact">Add Contact</button>
+      <div class="developed_by">
+        <p><em>Created by Louis Cappell</em></p>
+        <p><em>Codeworks</em></p>
+
+      </div>
     </header>
     <div class="contacts_container">
-        <div class="head">
-            <h3 class="name">Name</h3>
-            <h3>Tel Number</h3>
-            <h3 class="email">Email</h3>
-        </div>
-        <div class="contacts">
-            <p class="empty">No contacts, add a contact</p>
-        </div>
+      <div class="head">
+        <h3 class="name">Name</h3>
+        <h3>Tel Number</h3>
+        <h3 class="email">Email</h3>
+      </div>
+      <div class="contacts">
+        <p class="empty">No contacts, add a contact</p>
+      </div>
     </div>
 
     <div class="add_contact_container">
-        <form>
-            <label for="first-name">First Name:</label>
-            <br/>
-            <input type="text" id="first-name" name="first-name" maxlength="30" required>
-            <br/>
-            <label for="last-name">Last Name:</label>
-            <br/>
-            <input type="text" id="last-name" name="last-name" maxlength="30" required>
-            <br />
-            <label for="tel-number">Telephone Number:</label>
-            <br />
-            <input type="tel" id="tel-number" name="tel-number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" maxlength="15" required>
-            <br />
-            <label for="email">email-address:</label>
-            <br />
-            <input type="email" id="email" name="email" required>
-            <br />
-            <input class="submit" type="submit" value="Add Contact">
-        </form>
+      <form>
+        <label for="first-name">First Name:</label>
+        <br />
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          maxlength="30"
+          required
+        />
+        <br />
+        <label for="last-name">Last Name:</label>
+        <br />
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          maxlength="30"
+          required
+        />
+        <br />
+        <label for="tel-number">Telephone Number:</label>
+        <br />
+        <input
+          type="tel"
+          id="tel-number"
+          name="tel-number"
+          pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
+          maxlength="15"
+          required
+        />
+        <br />
+        <label for="email">email-address:</label>
+        <br />
+        <input type="email" id="email" name="email" required />
+        <br />
+        <input class="submit" type="submit" value="Add Contact" />
+      </form>
     </div>
     <div class="dark-bg"></div>
-    
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

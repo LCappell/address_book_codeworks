@@ -75,6 +75,11 @@ header button:hover {
   opacity: 0.8;
 }
 
+.developed_by {
+  width: 60%;
+  text-align: end;
+}
+
 .contacts_container {
   width: 100%;
 }
@@ -282,6 +287,10 @@ input[type="number"] {
   header .search_bar img {
     width: 2.5vw;
     left: 2%;
+  }
+
+  .developed_by {
+    display: none;
   }
   .contacts_container .head h3 {
     font-size: 2vw;
